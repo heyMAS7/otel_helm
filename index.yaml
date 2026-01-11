@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   opentelemetry:
   - apiVersion: v2
-    created: "2026-01-11T20:31:20.0538617+02:00"
+    created: "2026-01-11T20:37:34.8570871+02:00"
     description: A Helm chart for OpenTelemetry sidecar collector and injection requirements
-    digest: 5e75d0230ae2cc49401e510b66efd05bfaedbc5246684340298ef2ed9a84d021
+    digest: aeb64d4c403b7845a0eae5c5eb6cda2f2bdeb3ab420b5e97a468d4d717be7218
     icon: https://www.broadleafcommerce.com/img/broadleaf_logo.png
     name: opentelemetry
     type: application
     urls:
-    - https://heymas7.github.io/otel_helm/packages/opentelemetry-0.0.1.tgz
+    - https://heymas7.github.io/otel_helm/opentelemetry-0.0.1.tgz
     version: 0.0.1
-generated: "2026-01-11T20:31:20.052154+02:00"
+generated: "2026-01-11T20:37:34.8560868+02:00"
