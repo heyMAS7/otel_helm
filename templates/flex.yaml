@@ -1,0 +1,48 @@
+apiVersion: opentelemetry.io/v1alpha1
+kind: OpenTelemetryCollector
+metadata:
+  name: flex
+spec:
+  mode: sidecar
+  managementState: managed
+  config: |
+    receivers:
+      otlp:
+        protocols:
+          http:
+            endpoint: 0.0.0.0:{{ .Values.receiver.http.port }}
+    processors:
+      memory_limiter:
+        check_interval: {{ .Values.processor.memory_limiter.check_interval }}
+        limit_percentage: {{ .Values.processor.memory_limiter.limit_percentage }}
+        spike_limit_percentage: {{ .Values.processor.memory_limiter.spike_limit_percentage }}
+      batch:
+        send_batch_size: {{ .Values.processor.batch.send_batch_size }}
+        timeout: {{ .Values.processor.batch.timeout }}
+      resourcedetection:
+        detectors: [env]
+    exporters:
+      otlp:
+        endpoint: {{ .Values.exporter.target }}
+        tls:
+          insecure: {{ .Values.exporter.tls.insecure }}
+    service:
+      telemetry:
+        logs:
+          level: "info"
+      pipelines:
+        traces:
+          receivers: [otlp]
+          processors: [resourcedetection]
+          # processors: [memory_limiter, batch]
+          exporters: [otlp]
+        metrics:
+          receivers: [otlp]
+          processors: [resourcedetection]
+          # processors: [memory_limiter, batch]
+          exporters: [otlp]
+        logs:
+          receivers: [otlp]
+          processors: [resourcedetection]
+          # processors: [memory_limiter, batch]
+          exporters: [otlp]

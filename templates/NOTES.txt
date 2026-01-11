@@ -1,0 +1,7 @@
+The following Broadleaf Microservices Chart has been installed:
+
+CHART NAME: {{ .Chart.Name }}
+CHART VERSION: {{ .Chart.Version }}
+RELEASE NAME: {{ .Release.Name }}
+APP VERSION: {{ .Chart.AppVersion }}
+

@@ -1,0 +1,7 @@
+apiVersion: v2
+name: opentelemetry
+description: A Helm chart for OpenTelemetry sidecar collector and injection requirements
+icon: https://www.broadleafcommerce.com/img/broadleaf_logo.png
+type: application
+version: 0.0.1
+

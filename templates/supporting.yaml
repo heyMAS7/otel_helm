@@ -1,0 +1,57 @@
+apiVersion: opentelemetry.io/v1alpha1
+kind: OpenTelemetryCollector
+metadata:
+  name: supporting
+spec:
+  mode: daemonset
+  managementState: managed
+  config: |
+    receivers:
+      filelog:
+        include_file_path: true
+        include:
+          - /var/log/pods/*/zk/*.log
+          - /var/log/pods/*/kafkacluster/*.log
+          - /var/log/pods/*/solr/*.log
+        operators:
+          - id: container-parser
+            type: container
+    exporters:
+      otlp:
+        endpoint: {{ .Values.exporter.target }}
+        tls:
+          insecure: {{ .Values.exporter.tls.insecure }}
+    service:
+      pipelines:
+        logs:
+          receivers: [filelog]
+          processors: []
+          exporters: [otlp]
+  {{- if .Values.supporting.logs.use_docker_recipe }}
+  volumeMounts:
+    - name: varlogpods
+      mountPath: /var/log/pods
+      readOnly: true
+    - name: varlogcontainers
+      mountPath: /var/lib/docker/containers
+      readOnly: true
+  volumes:
+    - name: varlogpods
+      hostPath:
+        path: /var/log/pods
+    - name: varlogcontainers
+      hostPath:
+        path: /var/lib/docker/containers
+  {{- else }}
+  volumeMounts:
+    - name: varlogpods
+      mountPath: /var/log/pods
+      readOnly: true
+  volumes:
+    - name: varlogpods
+      hostPath:
+        path: /var/log/pods
+  {{- end }}
+  securityContext:
+    runAsUser: 0
+    runAsGroup: 0

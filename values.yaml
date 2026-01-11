@@ -1,0 +1,21 @@
+receiver:
+  http:
+    port: 4318
+exporter:
+  target: otellgtm:4317
+  tls:
+    insecure: true
+processor:
+  memory_limiter:
+    check_interval: 1s
+    limit_percentage: 75
+    spike_limit_percentage: 15
+  batch:
+    send_batch_size: 10000
+    timeout: 10s
+supporting:
+  logs:
+    # Based on the engine backing k8s, there are nuances regarding
+    # access to node /var/log/pods
+    # see https://docs.datadoghq.com/containers/kubernetes/log/?tab=datadogoperator#:~:text=Warning%20for%20unprivileged%20installations
+    use_docker_recipe: false

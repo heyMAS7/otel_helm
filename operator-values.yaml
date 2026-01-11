@@ -1,0 +1,14 @@
+# Example using a self-signed cert with no cert manager
+# Refer to https://opentelemetry.io/docs/platforms/kubernetes/helm/operator/ for different options
+admissionWebhooks:
+  certManager:
+    enabled: false
+  autoGenerateCert:
+    enabled: true
+    recreate: false
+    certPeriodDays: 36500
+# Example using an existing cert manager
+#  certManager:
+#    issuerRef:
+#      kind: Issuer
+#      name: cert-manager-letsencrypt-production
