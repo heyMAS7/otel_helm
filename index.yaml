@@ -1,0 +1,45 @@
+apiVersion: v1
+entries:
+  otel:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-01-14T23:21:51.9756766+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 69ca3739f1cbe492c7f1e4b4994350a7df29733a5929e544e2fee74dc15cf4f2
+    name: otel
+    type: application
+    urls:
+    - https://github.com/heyMAS7/otel_helm.git/otel-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-01-14T23:21:51.9772375+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 011faf5ea1d35648a3fd527224c1f53f4493028a3396690936936b1f1f8477c7
+    name: otel
+    type: application
+    urls:
+    - https://github.com/heyMAS7/otel_helm.git/otel/otel-0.1.0.tgz
+    version: 0.1.0
+  otel-collector:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-01-14T23:21:51.9766779+02:00"
+    description: A Helm chart for Kubernetes
+    digest: bbabb08bd5fd447cd874ecde3de5541b0ea13079c1fb8dcca25fc9df7d31d687
+    name: otel-collector
+    type: application
+    urls:
+    - https://github.com/heyMAS7/otel_helm.git/otel-collector-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-01-14T23:21:51.9772375+02:00"
+    description: A Helm chart for Kubernetes
+    digest: c9451e5b97be0664ffaec1dbc6db47ab7c370b1bbfc1fabd4e081fe79f25d68a
+    name: otel-collector
+    type: application
+    urls:
+    - https://github.com/heyMAS7/otel_helm.git/otel-collector/otel-collector-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-01-14T23:21:51.9747149+02:00"
