@@ -9,7 +9,7 @@ entries:
     name: otel
     type: application
     urls:
-    - https://github.com/heyMAS7/otel_helm.git/otel-0.1.0.tgz
+    - https://heyMAS7.github.io/otel_helm/otel-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
@@ -30,7 +30,7 @@ entries:
     name: otel-collector
     type: application
     urls:
-    - https://github.com/heyMAS7/otel_helm.git/otel-collector-0.1.0.tgz
+    - https://heyMAS7.github.io/otel_helm/otel-collector-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
