@@ -22,14 +22,4 @@ entries:
     urls:
     - https://heyMAS7.github.io/otel_helm/otel-collector-0.1.0.tgz
     version: 0.1.0
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2026-01-14T23:21:51.9772375+02:00"
-    description: A Helm chart for Kubernetes
-    digest: c9451e5b97be0664ffaec1dbc6db47ab7c370b1bbfc1fabd4e081fe79f25d68a
-    name: otel-collector
-    type: application
-    urls:
-    - https://github.com/heyMAS7/otel_helm.git/otel-collector/otel-collector-0.1.0.tgz
-    version: 0.1.0
 generated: "2026-01-14T23:21:51.9747149+02:00"
