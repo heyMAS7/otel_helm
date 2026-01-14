@@ -12,7 +12,7 @@ data:
     processors:
       batch: {}
     exporters:
-      logging:
+      debug:
         loglevel: debug
     service:
       pipelines:
