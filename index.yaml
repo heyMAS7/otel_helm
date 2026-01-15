@@ -3,18 +3,18 @@ entries:
   grafana:
   - apiVersion: v2
     appVersion: 11.4.0
-    created: "2026-01-15T16:08:00.386813+02:00"
+    created: "2026-01-15T18:04:32.4072012+02:00"
     description: A simple Helm chart for Grafana
     digest: 02a5b0dca365ca699e6367ceace1ce555fa2cb642ad077e1fe903e66eac3f9ba
     name: grafana
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/grafana-1.0.0.tgz
+    - https://heyMAS7.github.io/otel_helm/grafana-1.0.0.tgz
     version: 1.0.0
   grafana-alloy:
   - apiVersion: v2
     appVersion: v1.5.1
-    created: "2026-01-15T16:08:00.3885938+02:00"
+    created: "2026-01-15T18:04:32.4094953+02:00"
     dependencies:
     - name: alloy
       repository: https://grafana.github.io/helm-charts
@@ -24,12 +24,12 @@ entries:
     name: grafana-alloy
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/grafana-alloy-1.0.0.tgz
+    - https://heyMAS7.github.io/otel_helm/grafana-alloy-1.0.0.tgz
     version: 1.0.0
   grafana-loki:
   - apiVersion: v2
     appVersion: 3.1.2
-    created: "2026-01-15T16:08:00.4043584+02:00"
+    created: "2026-01-15T18:04:32.4270364+02:00"
     dependencies:
     - name: loki
       repository: https://grafana.github.io/helm-charts
@@ -39,12 +39,12 @@ entries:
     name: grafana-loki
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/grafana-loki-1.0.0.tgz
+    - https://heyMAS7.github.io/otel_helm/grafana-loki-1.0.0.tgz
     version: 1.0.0
   grafana-tempo:
   - apiVersion: v2
     appVersion: 2.6.1
-    created: "2026-01-15T16:08:00.4058665+02:00"
+    created: "2026-01-15T18:04:32.4286773+02:00"
     dependencies:
     - name: tempo
       repository: https://grafana.github.io/helm-charts
@@ -54,59 +54,59 @@ entries:
     name: grafana-tempo
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/grafana-tempo-1.0.0.tgz
+    - https://heyMAS7.github.io/otel_helm/grafana-tempo-1.0.0.tgz
     version: 1.0.0
   kube-prometheus:
   - apiVersion: v2
     appVersion: v3.1.0
-    created: "2026-01-15T16:08:00.4058665+02:00"
+    created: "2026-01-15T18:04:32.4286773+02:00"
     description: A simple Helm chart for Prometheus monitoring
     digest: 6498d56192e7f85a4f55448f438258c28e1307e0de190a83e891213fafda5934
     name: kube-prometheus
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/kube-prometheus-1.0.0.tgz
+    - https://heyMAS7.github.io/otel_helm/kube-prometheus-1.0.0.tgz
     version: 1.0.0
   otel:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-01-15T16:08:00.415867+02:00"
+    created: "2026-01-15T18:04:32.4292267+02:00"
     description: A Helm chart for Kubernetes
     digest: a4d62c315f166f0b590051fcfa4ec4a1a7f471395bc5dd1734519ed5f937930c
     name: otel
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/otel-0.1.0.tgz
+    - https://heyMAS7.github.io/otel_helm/otel-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-01-15T16:08:00.4309979+02:00"
+    created: "2026-01-15T18:04:32.4303226+02:00"
     description: A Helm chart for Kubernetes
     digest: 011faf5ea1d35648a3fd527224c1f53f4493028a3396690936936b1f1f8477c7
     name: otel
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/otel/otel-0.1.0.tgz
+    - https://heyMAS7.github.io/otel_helm/otel/otel-0.1.0.tgz
     version: 0.1.0
   otel-collector:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-01-15T16:08:00.4228962+02:00"
+    created: "2026-01-15T18:04:32.4297748+02:00"
     description: A Helm chart for Kubernetes
     digest: 9ca01f9245d5b2038dee18a4daee9ee0c3cb870ee182cdb338894910b7398816
     name: otel-collector
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/otel-collector-0.1.0.tgz
+    - https://heyMAS7.github.io/otel_helm/otel-collector-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-01-15T16:08:00.4385441+02:00"
+    created: "2026-01-15T18:04:32.4303226+02:00"
     description: A Helm chart for Kubernetes
     digest: c9451e5b97be0664ffaec1dbc6db47ab7c370b1bbfc1fabd4e081fe79f25d68a
     name: otel-collector
     type: application
     urls:
-    - https://heyMAS7.github.io/helm_otel/otel-collector/otel-collector-0.1.0.tgz
+    - https://heyMAS7.github.io/otel_helm/otel-collector/otel-collector-0.1.0.tgz
     version: 0.1.0
-generated: "2026-01-15T16:08:00.3818475+02:00"
+generated: "2026-01-15T18:04:32.4066506+02:00"
