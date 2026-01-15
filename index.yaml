@@ -9,7 +9,7 @@ entries:
     name: grafana
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/grafana-1.0.0.tgz
+    - https://heyMAS7.github.io/helm_otel/grafana-1.0.0.tgz
     version: 1.0.0
   grafana-alloy:
   - apiVersion: v2
@@ -24,7 +24,7 @@ entries:
     name: grafana-alloy
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/grafana-alloy-1.0.0.tgz
+    - https://heyMAS7.github.io/helm_otel/grafana-alloy-1.0.0.tgz
     version: 1.0.0
   grafana-loki:
   - apiVersion: v2
@@ -39,7 +39,7 @@ entries:
     name: grafana-loki
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/grafana-loki-1.0.0.tgz
+    - https://heyMAS7.github.io/helm_otel/grafana-loki-1.0.0.tgz
     version: 1.0.0
   grafana-tempo:
   - apiVersion: v2
@@ -54,7 +54,7 @@ entries:
     name: grafana-tempo
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/grafana-tempo-1.0.0.tgz
+    - https://heyMAS7.github.io/helm_otel/grafana-tempo-1.0.0.tgz
     version: 1.0.0
   kube-prometheus:
   - apiVersion: v2
@@ -65,7 +65,7 @@ entries:
     name: kube-prometheus
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/kube-prometheus-1.0.0.tgz
+    - https://heyMAS7.github.io/helm_otel/kube-prometheus-1.0.0.tgz
     version: 1.0.0
   otel:
   - apiVersion: v2
@@ -76,7 +76,7 @@ entries:
     name: otel
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/otel-0.1.0.tgz
+    - https://heyMAS7.github.io/helm_otel/otel-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
@@ -86,7 +86,7 @@ entries:
     name: otel
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/otel/otel-0.1.0.tgz
+    - https://heyMAS7.github.io/helm_otel/otel/otel-0.1.0.tgz
     version: 0.1.0
   otel-collector:
   - apiVersion: v2
@@ -97,7 +97,7 @@ entries:
     name: otel-collector
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/otel-collector-0.1.0.tgz
+    - https://heyMAS7.github.io/helm_otel/otel-collector-0.1.0.tgz
     version: 0.1.0
   - apiVersion: v2
     appVersion: 1.16.0
@@ -107,6 +107,6 @@ entries:
     name: otel-collector
     type: application
     urls:
-    - https://heyMAS7.github.io/helm-otel/otel-collector/otel-collector-0.1.0.tgz
+    - https://heyMAS7.github.io/helm_otel/otel-collector/otel-collector-0.1.0.tgz
     version: 0.1.0
 generated: "2026-01-15T16:08:00.3818475+02:00"
