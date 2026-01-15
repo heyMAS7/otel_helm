@@ -1,25 +1,112 @@
 apiVersion: v1
 entries:
+  grafana:
+  - apiVersion: v2
+    appVersion: 11.4.0
+    created: "2026-01-15T16:08:00.386813+02:00"
+    description: A simple Helm chart for Grafana
+    digest: 02a5b0dca365ca699e6367ceace1ce555fa2cb642ad077e1fe903e66eac3f9ba
+    name: grafana
+    type: application
+    urls:
+    - https://heyMAS7.github.io/helm-otel/grafana-1.0.0.tgz
+    version: 1.0.0
+  grafana-alloy:
+  - apiVersion: v2
+    appVersion: v1.5.1
+    created: "2026-01-15T16:08:00.3885938+02:00"
+    dependencies:
+    - name: alloy
+      repository: https://grafana.github.io/helm-charts
+      version: 1.3.0
+    description: Grafana Alloy for collecting logs and traces
+    digest: 21433bdaa2afdd7425403620f0554b920868f206588b8f4989221f1a10ce17cb
+    name: grafana-alloy
+    type: application
+    urls:
+    - https://heyMAS7.github.io/helm-otel/grafana-alloy-1.0.0.tgz
+    version: 1.0.0
+  grafana-loki:
+  - apiVersion: v2
+    appVersion: 3.1.2
+    created: "2026-01-15T16:08:00.4043584+02:00"
+    dependencies:
+    - name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: 6.42.0
+    description: A simple Helm chart for Grafana Loki logging
+    digest: d0e911c9dacec56eb5bd60a23e9a492e2bb5040ccf59b63296bbc4ee7681134b
+    name: grafana-loki
+    type: application
+    urls:
+    - https://heyMAS7.github.io/helm-otel/grafana-loki-1.0.0.tgz
+    version: 1.0.0
+  grafana-tempo:
+  - apiVersion: v2
+    appVersion: 2.6.1
+    created: "2026-01-15T16:08:00.4058665+02:00"
+    dependencies:
+    - name: tempo
+      repository: https://grafana.github.io/helm-charts
+      version: 1.17.0
+    description: A simple Helm chart for Grafana Tempo tracing
+    digest: 30f2fa89611a4bdbda71b65ff166070d7c7f3a0a7bd42fc97fc89d29f1d93b93
+    name: grafana-tempo
+    type: application
+    urls:
+    - https://heyMAS7.github.io/helm-otel/grafana-tempo-1.0.0.tgz
+    version: 1.0.0
+  kube-prometheus:
+  - apiVersion: v2
+    appVersion: v3.1.0
+    created: "2026-01-15T16:08:00.4058665+02:00"
+    description: A simple Helm chart for Prometheus monitoring
+    digest: 6498d56192e7f85a4f55448f438258c28e1307e0de190a83e891213fafda5934
+    name: kube-prometheus
+    type: application
+    urls:
+    - https://heyMAS7.github.io/helm-otel/kube-prometheus-1.0.0.tgz
+    version: 1.0.0
   otel:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-01-14T23:21:51.9756766+02:00"
+    created: "2026-01-15T16:08:00.415867+02:00"
     description: A Helm chart for Kubernetes
-    digest: 69ca3739f1cbe492c7f1e4b4994350a7df29733a5929e544e2fee74dc15cf4f2
+    digest: a4d62c315f166f0b590051fcfa4ec4a1a7f471395bc5dd1734519ed5f937930c
     name: otel
     type: application
     urls:
-    - https://heyMAS7.github.io/otel_helm/otel-0.1.0.tgz
+    - https://heyMAS7.github.io/helm-otel/otel-0.1.0.tgz
+    version: 0.1.0
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-01-15T16:08:00.4309979+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 011faf5ea1d35648a3fd527224c1f53f4493028a3396690936936b1f1f8477c7
+    name: otel
+    type: application
+    urls:
+    - https://heyMAS7.github.io/helm-otel/otel/otel-0.1.0.tgz
     version: 0.1.0
   otel-collector:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-01-14T23:21:51.9766779+02:00"
+    created: "2026-01-15T16:08:00.4228962+02:00"
     description: A Helm chart for Kubernetes
-    digest: bbabb08bd5fd447cd874ecde3de5541b0ea13079c1fb8dcca25fc9df7d31d687
+    digest: 9ca01f9245d5b2038dee18a4daee9ee0c3cb870ee182cdb338894910b7398816
     name: otel-collector
     type: application
     urls:
-    - https://heyMAS7.github.io/otel_helm/otel-collector-0.1.0.tgz
+    - https://heyMAS7.github.io/helm-otel/otel-collector-0.1.0.tgz
     version: 0.1.0
-generated: "2026-01-14T23:21:51.9747149+02:00"
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-01-15T16:08:00.4385441+02:00"
+    description: A Helm chart for Kubernetes
+    digest: c9451e5b97be0664ffaec1dbc6db47ab7c370b1bbfc1fabd4e081fe79f25d68a
+    name: otel-collector
+    type: application
+    urls:
+    - https://heyMAS7.github.io/helm-otel/otel-collector/otel-collector-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-01-15T16:08:00.3818475+02:00"
