@@ -1,5 +1,7 @@
 # Official Tempo Helm chart configuration for local development
 tempo:
+  podSecurityContext: { }
+  securityContext: { }
   # Use single binary for simplicity in local dev
   tempo:
     repository: grafana/tempo
@@ -118,3 +120,9 @@ tempo:
   persistence:
     enabled: true
     size: 10Gi
+
+podSecurityContext:
+  enabled: false
+
+securityContext:
+  enabled: false
