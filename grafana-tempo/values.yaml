@@ -1,5 +1,8 @@
 # Official Tempo Helm chart configuration for local development
 tempo:
+  statefulset:
+    securityContext: { }
+    podSecurityContext: { }
   podSecurityContext: { }
   securityContext: { }
   # Use single binary for simplicity in local dev
