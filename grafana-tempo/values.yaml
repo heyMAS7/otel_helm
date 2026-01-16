@@ -11,6 +11,11 @@ tempo:
     tag: 2.6.1
     pullPolicy: IfNotPresent
 
+
+    podSecurityContext: { }
+    securityContext: { }
+
+
     # Tempo configuration
     structuredConfig:
       auth_enabled: false
